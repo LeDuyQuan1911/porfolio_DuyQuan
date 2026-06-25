@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio của Lê Duy Quân — IT student, Backend Developer và Automation Builder tại TP. Hồ Chí Minh." />
+    <meta name="theme-color" content="#08090c" />
+    <meta property="og:title" content="Lê Duy Quân — Backend Engineer" />
+    <meta property="og:description" content="Tổng quan nhanh về kinh nghiệm, kỹ năng, dự án học tập và định hướng của Lê Duy Quân." />
+    <title>Lê Duy Quân — Backend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="aurora aurora-one" aria-hidden="true"></div>
+    <div class="aurora aurora-two" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="cursor-orb" aria-hidden="true"></div>
+    <aside class="social-rail" aria-label="Social links"><span>CONNECT</span><i></i><a href="https://github.com/LeDuyQuan1911" target="_blank" rel="noopener" aria-label="GitHub">GH</a><a href="https://ldqtool.click" target="_blank" rel="noopener" aria-label="Duy Quan Tools">DQ</a></aside>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark">DQ</span>
+        <span class="brand-copy">Lê Duy Quân<small>Backend Developer</small></span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#top" data-i18n="navHome">Tổng quan</a>
+        <a href="#experience" data-i18n="navExperience">Kinh nghiệm</a>
+        <a href="#work" data-i18n="navWork">Dự án</a>
+        <a href="#skills" data-i18n="navSkills">Kỹ năng</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+        <a class="pill-button compact" href="mailto:leduyquan2574@gmail.com?subject=Portfolio%20-%20Li%C3%AAn%20h%E1%BB%87%20L%C3%AA%20Duy%20Qu%C3%A2n&body=Ch%C3%A0o%20Qu%C3%A2n%2C%0A%0AT%C3%B4i%20%C4%91%C3%A3%20xem%20portfolio%20c%E1%BB%A7a%20b%E1%BA%A1n%20v%C3%A0%20mu%E1%BB%91n%20trao%20%C4%91%E1%BB%95i%20th%C3%AAm.%0A"><span class="status-dot"></span><span data-i18n="contact">Liên hệ</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+<h1>
+              <span data-i18n="heroLine1">Lê Duy Quân</span><br />
+              <span class="outline-text" data-i18n="heroLine2">Backend Developer.</span>
+            </h1>
+            <p class="hero-lead" data-i18n="heroLead">Sinh viên CNTT tại Saigon University, có kinh nghiệm backend, frontend và automation. Điểm mạnh của tôi là linh hoạt, giao tiếp tốt và xử lý vấn đề theo tư duy hệ thống.</p><p class="ai-belief" data-i18n="aiBelief">Trong thời buổi AI phát triển rất nhanh, tôi tin giá trị của lập trình viên không chỉ là viết code, mà là nhìn đúng vấn đề, thiết kế hệ thống đủ bền và biến những ý tưởng hay thành sản phẩm có thể vận hành.</p>
+            <div class="journey-stack" aria-label="Hành trình học tập và làm việc">
+              <article class="journey-card journey-photo"><span>2026</span><strong>TMA Solutions</strong><small>Backend Developer · English Platform</small></article>
+              <article class="journey-card"><span>2023—24</span><strong>Jung Talents</strong><small>Frontend · English learning platform</small></article>
+              <article class="journey-card"><span>2022—26</span><strong>Saigon University</strong><small>IT Engineering · Academic projects</small></article>
+            </div><div class="hero-actions">
+              <a class="pill-button primary magnetic" href="#work"><span data-i18n="viewWork">Xem dự án</span><span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="assets/Le-Duy-Quan-CV.pdf" target="_blank"><span data-i18n="viewCv">Mở CV</span><span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/LeDuyQuan1911" target="_blank" rel="noopener"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="120"><span class="sparkle sparkle-a">&#10022;</span><span class="sparkle sparkle-b">&#10022;</span><span class="sparkle sparkle-c">&#10023;</span>
+            <div class="portrait-frame">
+              <div class="portrait-glow"></div>
+              <img src="assets/leduyquan.jpg" alt="Lê Duy Quân" />
+              <div class="portrait-label"><span>01</span><span data-i18n="portraitLabel">Engineer / Builder</span></div>
+            </div>
+            <div class="floating-card card-code">
+              <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+              <code><b>quan</b>@portfolio:~$<br /><span>connect --github</span><i>_</i></code>
+            </div>
+            <a class="floating-card card-live visual-link" href="https://github.com/LeDuyQuan1911" target="_blank" rel="noopener" aria-label="GitHub của Lê Duy Quân"><span></span><b>GITHUB</b><small>31+ REPOSITORIES</small></a>
+            <a class="floating-card card-stack visual-link" href="https://ldqtool.click" target="_blank" rel="noopener" aria-label="Duy Quan Tools"><small>LDQTOOL.CLICK</small><strong>Automation tools<br />Web · Bot · AI</strong></a>
+          </div>
+        </div>
+
+        <div class="signal-row reveal" data-delay="220">
+          <div><strong data-count="31">0</strong><span data-i18n="publicRepos">Public repositories</span></div>
+          <div><strong>02+</strong><span data-i18n="yearsBuilding">Năm xây sản phẩm</span></div>
+          <div><strong>04</strong><span data-i18n="liveTools">Automation tools đang chạy</span></div>
+          <div class="signal-note"><span class="mini-avatar"><img src="assets/leduyquan.jpg" alt="" /></span><p data-i18n="signalNote">Từ yêu cầu đến API, giao diện, testing và deployment.</p></div>
+        </div>
+      </section>
+
+      
+
+
+
+      
+
+<section class="experience section-shell" id="experience">
+        <div class="section-heading reveal">
+          <div><span class="section-index">01 / EXPERIENCE</span><h2 data-i18n="experienceTitle">Tôi từng làm<br />việc ở đâu?</h2></div>
+          
+        </div>
+        <div class="experience-cards">
+          <article class="experience-card featured reveal">
+            <div class="experience-card-head"><span>2026</span><i>Ho Chi Minh City</i></div><h3 class="company-name">TMA Solutions</h3><strong class="role-name">Back-end Developer</strong>
+            <p data-i18n="tmaDesc">Phát triển REST API với FastAPI, tối ưu truy vấn database, xử lý lỗi concurrency trong Django Admin và hỗ trợ triển khai hệ thống với Nginx.</p>
+            <div class="experience-points"><span>English Platform</span><span>AI/PDF tooling</span><span>Backend workflow</span></div>
+            <div class="tag-list"><span>Python</span><span>FastAPI</span><span>Django</span><span>Nginx</span><span>AI / PDF</span></div>
+          </article>
+          <article class="experience-card reveal" data-delay="80">
+            <div class="experience-card-head"><span>2023—24</span><i>Ho Chi Minh City</i></div><h3 class="company-name">Jung Talents</h3><strong class="role-name">Front-end Developer</strong>
+            <p data-i18n="jungDesc">Xây dựng giao diện cho nền tảng kiểm tra và giảng dạy tiếng Anh; phối hợp với team trong/ngoài nước và hỗ trợ hướng dẫn HTML, CSS, JavaScript.</p>
+            <div class="tag-list"><span>JavaScript</span><span>React</span><span>UI Development</span><span>Collaboration</span></div>
+          </article>
+          <article class="experience-card reveal" data-delay="160">
+            <div class="experience-card-head"><span>2022—26</span><i>Education</i></div><h3 class="company-name">Saigon University</h3><strong class="role-name" data-i18n="degree">Engineering Degree · Information Technology</strong>
+            <p data-i18n="degreeDesc">Xây nền tảng khoa học máy tính và biến kiến thức thành các hệ thống web, automation tool và sản phẩm cá nhân.</p>
+            <div class="tag-list"><span>Express (Node.js)</span><span>React.js</span><span>Automation</span><span>Manual Testing</span></div>
+          </article>
+        </div>
+      </section>
+
+<section class="work section-shell" id="work"><div class="section-constellation" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="project-hero-layout reveal">
+          <div class="project-hero-left">
+            <div class="section-heading">
+              <div><span class="section-index">02 / PROJECTS</span><h2 data-i18n="workTitle">Dự án đã làm<br />và dự án học tập.</h2></div>
+            </div>
+            <div class="showcase-copy">
+              <span>LDQTOOL.CLICK</span>
+              <strong data-i18n="showcaseTitle">Một vài công cụ cá nhân đã triển khai thực tế.</strong>
+              <div class="showcase-track compact-tools">
+                <a href="https://chromewebstore.google.com/detail/tiktok-downloader-tools-a/oacmnbbidjggofgedgcagjnjihjinfol?authuser=0&hl=vi" target="_blank" rel="noopener"><i><img src="assets/tool-tiktok.png" alt="" loading="lazy" /></i><span><b>TikTok</b><em>Automation</em></span></a>
+                <a href="https://chromewebstore.google.com/detail/veo-automation-tool-on-go/jmobnhoghinjlmjogafjadohcmdebbej?authuser=0&hl=vi" target="_blank" rel="noopener"><i><img src="assets/tool-veo.webp" alt="" loading="lazy" /></i><span><b>VEO</b><em>Prompt flow</em></span></a>
+                <a href="https://chromewebstore.google.com/detail/facebook-tools-facebook-p/okjajaogjmnjdppjhajemaibelnjmpaj?authuser=0&hl=vi" target="_blank" rel="noopener"><i><img src="assets/tool-facebook.png" alt="" loading="lazy" /></i><span><b>Facebook</b><em>Page tools</em></span></a>
+                <a href="https://chromewebstore.google.com/detail/chatgpt-automation-tool-f/djcaffohlelncffmmjljlcpeppddkgap?authuser=0&hl=vi" target="_blank" rel="noopener"><i><img src="assets/tool-chatgpt.png" alt="" loading="lazy" /></i><span><b>ChatGPT</b><em>Auto tasks</em></span></a>
+              </div>
+            </div>
+          </div>
+          <a class="demo-video" href="https://youtu.be/PXDoETJEYKw?si=ZjeVj06qqZwQt2RD" target="_blank" rel="noopener" aria-label="Xem video demo tool trên YouTube">
+            <img src="https://img.youtube.com/vi/PXDoETJEYKw/maxresdefault.jpg" alt="LDQ Tool demo video thumbnail" loading="lazy" /><span class="play-button" aria-hidden="true">▶</span><span class="video-badge">Demo video ↗</span>
+          </a>
+        </div>
+
+        <div class="project-grid project-slider">
+          <article class="project-card project-featured reveal tilt-card"><div class="card-shine" aria-hidden="true"></div>
+            <div class="project-topline"><span>LIVE ECOSYSTEM</span><a href="https://ldqtool.click/" target="_blank" rel="noopener">ldqtool.click ↗</a></div>
+            <div class="project-visual tools-visual">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="tool-core">DQ<span>TOOLS</span></div>
+              <span class="tool-node node-a">TikTok</span><span class="tool-node node-b">VEO</span><span class="tool-node node-c">ChatGPT</span><span class="tool-node node-d">Facebook</span>
+            </div>
+            <div class="project-copy">
+              <div><span class="project-number">001</span><h3><a href="https://ldqtool.click/" target="_blank" rel="noopener">Duy Quan Tools</a></h3></div>
+              <p data-i18n="toolsDesc">Nhóm Chrome extensions trên ldqtool.click giúp tự động hóa TikTok, Facebook, ChatGPT và Google Flow/VEO.</p>
+              <ul class="project-points">
+                <li>Xây dựng tool cá nhân đã triển khai thực tế trên Chrome Web Store.</li>
+                <li>Tập trung tự động hóa thao tác trình duyệt, publish flow và tối ưu trải nghiệm người dùng.</li>
+              </ul>
+              <ul class="project-facts"><li><b>Type</b><span>Sản phẩm thực tế / Chrome extensions</span></li><li><b>Skills</b><span>Automation logic, browser extension, product thinking, publish flow</span></li></ul>
+              <div class="tag-list"><span>Browser Extension</span><span>Automation</span><span>AI Workflow</span><span>Product</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-commerce reveal tilt-card" data-delay="80"><div class="card-shine" aria-hidden="true"></div>
+            <div class="project-topline"><span>MICROSERVICES</span><a href="https://github.com/LeDuyQuan1911/CNLTHD_Final" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <div class="project-visual commerce-visual">
+              <div class="commerce-window"><div class="window-bar"><i></i><i></i><i></i></div><div class="commerce-body"><aside></aside><div class="product-shapes"><i></i><i></i><i></i><i></i></div></div></div>
+            </div>
+            <div class="project-copy">
+              <div><span class="project-number">002</span><h3><a href="https://github.com/LeDuyQuan1911/CNLTHD_Final" target="_blank" rel="noopener">Multi-vendor E-commerce</a></h3></div>
+              <p data-i18n="commerceDesc">Nền tảng e-commerce đa người bán theo hướng microservices, mô phỏng luồng vận hành giống Amazon.</p>
+              <ul class="project-points">
+                <li>Tách service độc lập: Auth, Product, Order, Payment, Chat với RESTful APIs và JWT authentication.</li>
+                <li>CRUD cho product, order, user management; storefront, cart, order tracking và admin dashboard.</li>
+                <li>Tích hợp Stripe, PayPal, Multer, Nodemailer, Cloudinary; có email verification và notifications.</li>
+                <li>Thiết kế Use Case, Activity, Sequence diagrams và database schema; test bằng Jest, Postman/manual.</li>
+              </ul>
+              <ul class="project-facts"><li><b>GitHub</b><span>LeDuyQuan1911 / CNLTHD_Final</span></li><li><b>Tech</b><span>ReactJS, Node.js, Express.js, MongoDB, Docker, Socket.IO</span></li></ul>
+              <div class="tag-list"><span>Microservices</span><span>JWT</span><span>REST API</span><span>Payment</span><span>Testing</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-football reveal tilt-card" data-delay="160"><div class="card-shine" aria-hidden="true"></div>
+            <div class="project-topline"><span>MANAGEMENT SYSTEM</span><a href="https://github.com/LeDuyQuan1911/Project_CNPM" target="_blank" rel="noopener">GitHub ↗</a></div>
+            <div class="project-visual football-visual">
+              <div class="pitch"><span></span><div class="ball">✦</div></div>
+              <div class="score-chip"><b>01</b><small>LIVE TABLE</small></div>
+            </div>
+            <div class="project-copy">
+              <div><span class="project-number">003</span><h3><a href="https://github.com/LeDuyQuan1911/Project_CNPM" target="_blank" rel="noopener">National Football Championship</a></h3></div>
+              <p data-i18n="footballDesc">Hệ thống quản lý giải bóng đá quốc gia cho đội, cầu thủ, trận đấu, lịch thi đấu và kết quả.</p>
+              <ul class="project-points">
+                <li>Phát triển đầy đủ CRUD cho teams, players và matches theo kiến trúc MVC.</li>
+                <li>JWT authentication, email verification và admin dashboard để kiểm soát hệ thống.</li>
+                <li>Tính năng: match scheduling, result tracking, automatic ranking table, searching/filtering.</li>
+                <li>Kiểm thử bằng manual testing, Jest automation và Postman API testing.</li>
+              </ul>
+              <ul class="project-facts"><li><b>GitHub</b><span>LeDuyQuan1911 / Project_CNPM</span></li><li><b>Tech</b><span>EJS, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, JWT</span></li></ul>
+              <div class="tag-list"><span>MVC</span><span>CRUD</span><span>JWT</span><span>Ranking</span><span>Postman</span></div>
+            </div>
+          </article>
+        
+          <article class="project-card project-bot reveal tilt-card" data-delay="220"><div class="card-shine" aria-hidden="true"></div>
+            <div class="project-topline"><span>WEB + TELEGRAM BOT</span><a href="https://t.me/DuyQuan_bot" target="_blank" rel="noopener">Telegram ↗</a></div>
+            <div class="project-visual bot-visual">
+              <div class="bot-phone"><div class="bot-bar"><i></i><i></i><i></i></div><div class="bot-chat"><span></span><span></span><span></span><b>Order confirmed</b></div></div>
+              <div class="user-badge"><b>1000+</b><small>USERS</small></div>
+            </div>
+            <div class="project-copy">
+              <div><span class="project-number">004</span><h3><a href="https://t.me/DuyQuan_bot" target="_blank" rel="noopener">Sales Website & Telegram Bot</a></h3></div>
+              <p data-i18n="salesBotDesc">Website và bot bán hàng Telegram hỗ trợ đặt hàng, phản hồi khách và vận hành cộng đồng hơn 1000 users.</p>
+              <ul class="project-points">
+                <li>Xây dựng luồng bán hàng, nhận phản hồi và hỗ trợ người dùng ngay trong Telegram.</li>
+                <li>Tập trung vận hành thực tế: ổn định, dễ dùng, phản hồi nhanh và hỗ trợ cộng đồng.</li>
+              </ul>
+              <ul class="project-facts"><li><b>Type</b><span>Sản phẩm thực tế / web & bot</span></li><li><b>Skills</b><span>Telegram Bot, Web App, automation flow, user support, operations</span></li></ul>
+              <div class="tag-list"><span>Telegram Bot</span><span>Web App</span><span>Automation</span><span>1000+ Users</span></div>
+            </div>
+          </article>        </div>
+
+<a class="all-work-link reveal" href="https://github.com/LeDuyQuan1911?tab=repositories" target="_blank" rel="noopener"><span data-i18n="allRepos">Khám phá tất cả 31 repositories</span><i>↗</i></a>
+      </section>
+
+<section class="skills-page section-shell" id="skills">
+        <div class="skills-page-grid reveal">
+          <div class="skills-page-intro">
+            <span class="section-index">03 / SKILLS & CONTACT</span>
+            <h2 data-i18n="skillsPageTitle">Kỹ năng chính<br />và liên hệ.</h2>
+            <p data-i18n="skillsPageLead">Tôi tập trung vào backend, automation và khả năng hiểu hệ thống để biến yêu cầu thành giải pháp vận hành được.</p>
+            <div class="contact-mini">
+              <a class="pill-button primary magnetic" href="mailto:leduyquan2574@gmail.com?subject=Portfolio%20-%20Li%C3%AAn%20h%E1%BB%87%20L%C3%AA%20Duy%20Qu%C3%A2n&body=Ch%C3%A0o%20Qu%C3%A2n%2C%0A%0AT%C3%B4i%20%C4%91%C3%A3%20xem%20portfolio%20c%E1%BB%A7a%20b%E1%BA%A1n%20v%C3%A0%20mu%E1%BB%91n%20trao%20%C4%91%E1%BB%95i%20th%C3%AAm.%0A">Email ↗</a>
+              <a class="text-link" href="assets/Le-Duy-Quan-CV.pdf" target="_blank"><span data-i18n="viewCv">Mở CV</span><span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/LeDuyQuan1911" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="skill-board">
+            <article><span>BACK-END</span><p>Python · FastAPI · Django · Node.js · Express · REST API · JWT · Nginx</p></article>
+            <article><span>FRONT-END</span><p>JavaScript · TypeScript · React · Next.js · Tailwind · Material UI</p></article>
+            <article><span>DATABASE</span><p>MySQL · MongoDB · SQLite · Query optimization · Data modeling</p></article>
+            <article><span>DELIVERY</span><p>Docker · Git/GitHub · Postman · JMeter · Sentry · Deployment flow</p></article>
+            <article><span>WORK STYLE</span><p>Linh hoạt · Giao tiếp rõ ràng · Bóc tách vấn đề · Tư duy hệ thống</p></article>
+          </div>
+        </div>
+      </section>
+</main>
+
+    <footer class="footer section-shell"><span>© <span id="year"></span> Lê Duy Quân</span><span data-i18n="footerNote">Built as a concise portfolio.</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
